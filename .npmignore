@@ -1,0 +1,39 @@
+# Logs
+*.log
+npm-debug.log*
+
+# CI
+.travis.yml
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Documentation
+doc
+_doc
+examples
+
+# Tests
+tests
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# tests
+/test
+
+# IDE
+.idea
+.editorconfig
+
+# misc
+scripts
+Makefile
+.github
+.eslintrc.yml
+.eslintignore
+.gitignore
+.changelogrc

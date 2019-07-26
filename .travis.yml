@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - '6'
+  - '8'
+  - '10'
+  - '11'
+env:
+  - CUMCUMBER_VERSION=4.x
+  - CUMCUMBER_VERSION=5.x
+script:
+  - yarn add cucumber@${CUMCUMBER_VERSION}
+  - yarn run lint
+  - yarn run check-fmt
+  - yarn run test-cover
+  - yarn run examples -- --tags @offline
+after_success:
+  - yarn run coverage

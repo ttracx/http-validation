@@ -1,0 +1,80 @@
+{
+  "name": "@ekino/veggies",
+  "version": "0.6.0",
+  "description": "Veggies is an awesome cucumberjs library for API/CLI testing. Great for testing APIs built upon Express, Koa, HAPI, Loopback and others. It's also the perfect companion for testing CLI applications built with commander, meow & Co.",
+  "tags": [
+    "bdd",
+    "cucumber",
+    "gherkin",
+    "testing",
+    "api",
+    "http",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekino/veggies.git"
+  },
+  "main": "src/index.js",
+  "author": "plouc <https://github.com/plouc>",
+  "maintainers": [
+    {
+      "name": "Raphaël Benitte"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "engineStrict": true,
+  "dependencies": {
+    "@ekino/veggies": "^0.6.0",
+    "chai": "4.2",
+    "fs-extra": "7.0",
+    "glob": "7.1",
+    "jest-diff": "24.0",
+    "js-yaml": "3.12",
+    "lodash": "4.17",
+    "natural-compare": "1.4",
+    "pretty-format": "24.0",
+    "request": "2.88",
+    "tough-cookie": "2.4"
+  },
+  "devDependencies": {
+    "babylon": "6.x",
+    "chalk": "2.x",
+    "commitlint": "7.x",
+    "coveralls": "3.x",
+    "cucumber": "5.x",
+    "eslint": "5.x",
+    "gh-pages": "2.x",
+    "git-changelog": "1.x",
+    "husky": "1.x",
+    "jest": "24.x",
+    "jsdoc": "3.x",
+    "lint-staged": "8.x",
+    "minami": "1.x",
+    "mustache": "3.x",
+    "nock": "10.x",
+    "prettier": "1.x",
+    "sinon": "7.x"
+  },
+  "peerDependencies": {
+    "cucumber": ">=4.0.0 <6.0.0"
+  },
+  "scripts": {
+    "test": "jest --verbose tests",
+    "test-cover": "jest --verbose --coverage",
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "fmt": "prettier --print-width 100 --tab-width=4 --single-quote --bracket-spacing --no-semi --color --write \"{src,tests,scripts}/**/*.js\"",
+    "check-fmt": "prettier --print-width 100 --tab-width=4 --single-quote --bracket-spacing --no-semi --list-different \"{src,tests,scripts}/**/*.js\"",
+    "version": "echo ${npm_package_version}",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "readme": "node scripts/generate_readme",
+    "doc": "jsdoc src -R README.md -r -d _doc --verbose -t node_modules/minami",
+    "doc-pub": "yarn run readme && yarn run doc && gh-pages -d _doc",
+    "examples": "cucumber-js --require examples/support examples/features",
+    "changelog": "git-changelog -t false -n v${npm_package_version}"
+  }
+}
