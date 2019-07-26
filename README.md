@@ -1,17 +1,4 @@
-[![veggies](https://raw.githubusercontent.com/ekino/veggies/master/doc/veggies-banner.png)](https://ekino.github.io/veggies/)
-
-[![NPM version][npm-image]][npm-url]
-[![Travis CI][travis-image]][travis-url]
-[![Coverage Status][coverage-image]][coverage-url]
-[![styled with prettier][prettier-image]][prettier-url]
-
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
-
-Veggies is an awesome cucumberjs library for API/CLI testing.
-Great for testing APIs built upon Express, Koa, HAPI, Loopback and others.
-It's also the perfect companion for testing CLI applications built with commander, meow & Co. 
+Core + API/CLI testing.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -56,13 +43,13 @@ It's also the perfect companion for testing CLI applications built with commande
 Using npm:
 
 ```sh
-npm install @ekino/veggies
+npm install @ttracx/http-validation
 ```
 
 Or yarn:
 
 ```sh
-yarn add @ekino/veggies
+yarn add @ttracx/http-validation
 ```
 
 Then all you have to do is installing the provided extensions:
@@ -71,7 +58,7 @@ Then all you have to do is installing the provided extensions:
 // /support/world.js
 
 const { setWorldConstructor } = require('cucumber')
-const { state, fixtures, httpApi, cli } = require('@ekino/veggies')
+const { state, fixtures, httpApi, cli } = require('@ttracx/http-validation')
 
 
 setWorldConstructor(function() {
@@ -529,7 +516,7 @@ To install the extension, you should add the following snippet to your `world` f
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { state } = require('@ekino/veggies')
+const { state } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -589,7 +576,7 @@ To install the extension, you should add the following snippet to your `world` f
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { fixtures } = require('@ekino/veggies')
+const { fixtures } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -632,7 +619,7 @@ to your `world` file:
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { state, fixtures, httpApi } = require('@ekino/veggies')
+const { state, fixtures, httpApi } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -720,7 +707,7 @@ to your `world` file:
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { state, fixtures, cli } = require('@ekino/veggies')
+const { state, fixtures, cli } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -786,7 +773,7 @@ to your `world` file:
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { state, fixtures, cli, fileSystem } = require('@ekino/veggies')
+const { state, fixtures, cli, fileSystem } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -849,7 +836,7 @@ to your `world` file:
 // /support/world.js
 
 const { defineSupportCode } = require('cucumber')
-const { state, fixtures, cli, fileSystem, snapshot } = require('@ekino/veggies')
+const { state, fixtures, cli, fileSystem, snapshot } = require('@ttracx/http-validation')
 
 defineSupportCode(({ setWorldConstructor }) => {
     setWorldConstructor(function() {
@@ -900,7 +887,7 @@ This must be used on gherkin arrays. Based on your array type you have to use:
 For example:
 
 ```javascript
-const { cast } = require('@ekino/veggies')
+const { cast } = require('@ttracx/http-validation')
 const { defineSupportCode } = require('cucumber')
 
 defineSupportCode(function({ Given, When, Then }) {
@@ -951,21 +938,3 @@ There is a special tag which only runs examples not requiring network access:
 ```sh
 yarn run examples -- --tags @offline
 ```
-
-Due to public API rate limit (eg. GitHub API), this tag is used when running on CI.
-
-[npm-image]: https://img.shields.io/npm/v/@ekino/veggies.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/@ekino/veggies
-[travis-image]: https://img.shields.io/travis/ekino/veggies.svg?style=flat-square
-[travis-url]: https://travis-ci.org/ekino/veggies
-[prettier-image]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
-[prettier-url]: https://github.com/prettier/prettier
-[coverage-image]: https://img.shields.io/coveralls/ekino/veggies/master.svg?style=flat-square
-[coverage-url]: https://coveralls.io/github/ekino/veggies?branch=master
-
-[github-watch-badge]: https://img.shields.io/github/watchers/ekino/veggies.svg?style=social
-[github-watch]: https://github.com/ekino/veggies/watchers
-[github-star-badge]: https://img.shields.io/github/stars/ekino/veggies.svg?style=social
-[github-star]: https://github.com/ekino/veggies/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20veggies!%20https://github.com/ekino/veggies%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/ekino/veggies.svg?style=social
