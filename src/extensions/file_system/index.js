@@ -14,7 +14,7 @@ const definitions = require('./definitions')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { state, cli, fileSystem } = require('@ekino/veggies')
+ * const { state, cli, fileSystem } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     state.extendWorld(this) // cli extension requires state extension
@@ -34,7 +34,7 @@ exports.extendWorld = require('./extend_world')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { state, cli, fileSystem } = require('@ekino/veggies')
+ * const { state, cli, fileSystem } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     state.extendWorld(this) // cli extension requires state extension

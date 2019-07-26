@@ -14,7 +14,7 @@ const definitions = require('./definitions')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { state, httpApi } = require('@ekino/veggies')
+ * const { state, httpApi } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     state.extendWorld(this) // httpApi extension requires state extension
@@ -40,7 +40,7 @@ exports.extendWorld = require('./extend_world')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { state, httpApi } = require('@ekino/veggies')
+ * const { state, httpApi } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     state.extendWorld(this) // httpApi extension requires state extension

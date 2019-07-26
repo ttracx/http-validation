@@ -15,7 +15,7 @@ const hooks = require('./hooks')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { snapshot } = require('@ekino/veggies')
+ * const { snapshot } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     snapshot.extendWorld(this)
@@ -33,7 +33,7 @@ exports.extendWorld = require('./extend_world')
  * // /support/world.js
  *
  * const { setWorldConstructor } = require('cucumber')
- * const { snapshot } = require('@ekino/veggies')
+ * const { snapshot } = require('@ttracx/http-validation')
  *
  * setWorldConstructor(function() {
  *     snapshot.extendWorld(this)

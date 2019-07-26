@@ -272,9 +272,9 @@
   dependencies:
     find-up "^2.1.0"
 
-"@ekino/veggies@^0.6.0":
+"@ttracx/http-validation@^0.6.0":
   version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ekino/veggies/-/veggies-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
+  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
   integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
   dependencies:
     chai "^4.0.2"
