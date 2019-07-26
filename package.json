@@ -1,6 +1,6 @@
 {
   "name": "@ttracx/http-validation",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "http-validation is an awesome cucumberjs library for GraphQL/API/CLI testing.",
   "tags": [
     "bdd",
