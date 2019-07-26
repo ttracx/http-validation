@@ -159,7 +159,7 @@ then it uses this value to make its next request.
 
 ```gherkin
 Scenario: Using GitHub API
-  Given I set User-Agent request header to veggies/1.0
+  Given I set User-Agent request header to ttracx/1.0
   When I GET https://api.github.com/
   And I pick response json emojis_url as emojisUrl
   And I GET {{emojisUrl}}
@@ -174,7 +174,7 @@ using different response values for second request.
 
 ```gherkin
 Scenario Outline: Fetching <key> API endpoint from root endpoint
-  Given I set User-Agent request header to veggies/1.0
+  Given I set User-Agent request header to ttracx/1.0
   When I GET https://api.github.com/
   Then response status code should be 200
   When I pick response json <key> as <key>
@@ -209,7 +209,7 @@ See [definitions](#http-api-gherkin-expressions) for all available cookies relat
 
 #### Testing json response
 
-**veggies** gives you the ability to check json responses, the corresponding gherkin expression is:
+**ttracxc** gives you the ability to check json responses, the corresponding gherkin expression is:
 
 ```
 /^(?:I )?json response should (fully )?match$/
@@ -544,8 +544,6 @@ Then:
 #### State low level API
 
 When installed, you can access it from the global cucumber context in your own step definitions.
-For available methods on the state, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_state_State.html).
 
 ```javascript
 defineSupportCode(({ When }) => {
@@ -590,8 +588,6 @@ fixtures.install(defineSupportCode)
 #### Fixtures low level API
 
 When installed, you can access it from the global cucumber context in your own step definitions.
-For available methods on the fixtures loader, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_fixtures_FixturesLoader.html).
 
 ```javascript
 defineSupportCode(({ When }) => {
@@ -681,8 +677,6 @@ Then:
 #### http API low level API
 
 When installed, you can access its client from the global cucumber context in your own step definitions.
-For available methods on the client, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_httpApi_client.html).
 
 ```javascript
 defineSupportCode(({ When }) => {
@@ -747,8 +741,7 @@ Then:
 #### CLI low level API
 
 When installed, you can access it from the global cucumber context in your own step definitions.
-For available methods on the client, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_Cli_Cli.html).
+
 
 ```javascript
 defineSupportCode(({ When }) => {
@@ -808,8 +801,7 @@ Then:
 #### File system low level API
 
 When installed, you can access it from the global cucumber context in your own step definitions.
-For available methods on the fileSystem, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_FileSystem_FileSystem.html).
+
 
 ```javascript
 defineSupportCode(({ Then }) => {
@@ -858,8 +850,6 @@ snapshot.install(defineSupportCode)
 #### Snapshot low level API
 
 When installed, you can access it from the global cucumber context in your own step definitions.
-For available methods on the snapshot, please refer to its own
-[documentation](https://ekino.github.io/veggies/module-extensions_snapshot_extension.html).
 
 ```javascript
 defineSupportCode(({ Then }) => {
