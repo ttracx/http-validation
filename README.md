@@ -88,10 +88,19 @@ for the [dedicated extension](#http-api-extension).
 #### Making a simple request and testing its status code
 
 ```gherkin
-Scenario: Using GitHub API
-  Given I set User-Agent request header to veggies/1.0
-  When I GET https://api.github.com/
-  Then response status code should be 200
+Scenario: Validating HTTP Using GQL Service
+    Given I set Accept-Language request header to en-US
+    And I set Authorization request header to Bearer 2a199b24-d19b-3646-8cff-5fa8965bddd3.0000016c30080ba0.2fd4ba3ff9a3d3beda3d3da6284676703d6df3a1
+    And I set Content-Language request header to en-US
+    And I set Cookie request header to dtCookie==3=srv=3=sn=43F4700147E1FB7A46131D6BC067D802=perc=100000=ol=0=mul=1
+    And I set dx-gql-authorization request header to Basic Z3FsQGRtMW46UEAkJDEyMyE=
+    And I set dx-gql-compression request header to true
+    And I set dx-gql-debug request header to http
+    And I set dx-gql-trusted request header to true
+    And I set User-Agent request header to Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+    And I set x-forwarded-for request header to 10.103.1.209
+    When I GET https://api-s.hhc.hilton.com/hospitality-corporate/v2/props/CHIHS/
+    Then response status code should be 200
 ```
 
 #### Posting data
@@ -302,7 +311,7 @@ If the header does not exist, the test will fail.
 #### Debugging failing API tests
 
 When testing APIs using cucumber, we often faced situations were we didn't understand why a given test were failing.
-The dirty fix was to add some nasty `console.log()` everywhere, that's why **veggies** provides helpers to dump response properties.
+The dirty fix was to add some nasty `console.log()` everywhere, that's why **ttracx** provides helpers to dump response properties.
 
 ```gherkin
 Scenario: Fetching something from the internets
@@ -318,7 +327,7 @@ You should disable those steps when the test is fixed as it can be noisy enough.
 #### Type system
 
 When testing json based APIs, which is a standard nowadays, you have to be aware of data types
-for sending payloads or making assertions on received responses, that's why veggies provides
+for sending payloads or making assertions on received responses, that's why ttracx provides
 a lightweight type systems.
 
 The following directives are available:
@@ -904,7 +913,7 @@ Can be used on:
   Then I should receive
     | id              | id1             |
     | age             | 1((number))     |
-    | name            | veggies         |
+    | name            | ttracx         |
     | isPublic        | true((newType)) |
 ```
 
