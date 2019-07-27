@@ -99,7 +99,6 @@ Scenario: Validating HTTP Using GQL Service
     And I set dx-gql-debug request header to http
     And I set dx-gql-trusted request header to true
     And I set User-Agent request header to Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
-    And I set x-forwarded-for request header to 10.103.1.209
     When I GET https://api-s.hhc.hilton.com/hospitality-corporate/v2/props/CHIHS/
     Then response status code should be 200
 ```
