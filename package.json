@@ -16,10 +16,10 @@
     "url": "https://github.com/ttracx/http-validation.git"
   },
   "main": "src/index.js",
-  "author": "plouc <https://github.com/plouc>",
+  "author": "ttracx <https://github.com/ttracx>",
   "maintainers": [
     {
-      "name": "Raphaël Benitte"
+      "name": "Tommy Xaypanya"
     }
   ],
   "license": "MIT",
