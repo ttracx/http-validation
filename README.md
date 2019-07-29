@@ -913,7 +913,7 @@ Can be used on:
   Then I should receive
     | id              | id1             |
     | age             | 1((number))     |
-    | name            | ttracx         |
+    | name            | ttracx          |
     | isPublic        | true((newType)) |
 ```
 
