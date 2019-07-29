@@ -110,7 +110,7 @@ You can easily issue a POST request using json payload
 ```gherkin
 Scenario: Creating a resource using json payload
   Given I set request json body
-    | username | plouc |
+    | username | ttracx|
     | gender   | male  |
   When I POST https://my-api.io/users
   Then response status code should be 201
@@ -122,7 +122,7 @@ to change `json` for `form`
 ```gherkin
 Scenario: Creating a resource using json payload
   Given I set request form body
-    | username | plouc |
+    | username | ttracx |
     | gender   | male  |
   When I POST https://my-api.io/users
   Then response status code should be 201
@@ -136,7 +136,7 @@ to improve this, you can use the [fixtures extension](#fixtures-extension) to de
 ```yaml
 # /features/user/fixtures/user.yml
 
-username: plouc
+username: ttracx
 gender:   male
 ```
 
@@ -348,7 +348,7 @@ For example you can use it to post typed json data:
 ```gherkin
 Scenario: Creating a resource using typed json payload
   Given I set request json body
-    | username  | plouc((string))          |
+    | username  | ttracx((string))          |
     | team_id   | 1((number))              |
     | is_active | true((boolean))          |
     | hobbies   | drawing,hacking((array)) |
@@ -360,7 +360,7 @@ which will generate the following payload:
 
 ```json
 {
-  "username": "plouc",
+  "username": "ttracx",
   "team_id": 1,
   "is_active": true,
   "hobbies": [
@@ -461,7 +461,7 @@ This example illustrates it:
 ```gherkin
 Scenario: Creating a resource using typed json payload
   Given I set request json body
-    | username  | plouc((string))          |
+    | username  | ttracx((string))         |
     | team_id   | 1((number))              |
     | is_active | true((boolean))          |
     | hobbies   | drawing,hacking((array)) |
