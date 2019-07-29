@@ -1,6 +1,6 @@
 @ttracx/http-validation@0.6.0
 --
-Core + API/CLI testing.
+Cucumberjs library for GraphQL/API/CLI testing. 
 
 ![node (scoped)](https://img.shields.io/node/v/@ttracx/http-validation)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ttracx/http-validation)
