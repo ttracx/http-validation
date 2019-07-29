@@ -348,7 +348,7 @@ For example you can use it to post typed json data:
 ```gherkin
 Scenario: Creating a resource using typed json payload
   Given I set request json body
-    | username  | ttracx((string))          |
+    | username  | ttracx((string))         |
     | team_id   | 1((number))              |
     | is_active | true((boolean))          |
     | hobbies   | drawing,hacking((array)) |
