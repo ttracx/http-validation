@@ -272,22 +272,6 @@
   dependencies:
     find-up "^2.1.0"
 
-"@ttracx/http-validation@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
-  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
-  dependencies:
-    chai "^4.0.2"
-    fs-extra "^4.0.0"
-    glob "^7.1.2"
-    jest-diff "^21.0.0"
-    js-yaml "^3.8.4"
-    lodash "^4.17.4"
-    natural-compare "^1.4.0"
-    pretty-format "^21.0.2"
-    request "^2.81.0"
-    tough-cookie "^2.3.2"
-
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -340,6 +324,22 @@
     "@sinonjs/commons" "^1.0.2"
     array-from "^2.1.1"
     lodash.get "^4.4.2"
+
+"@ttracx/http-validation@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
+  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
+  dependencies:
+    chai "^4.0.2"
+    fs-extra "^4.0.0"
+    glob "^7.1.2"
+    jest-diff "^21.0.0"
+    js-yaml "^3.8.4"
+    lodash "^4.17.4"
+    natural-compare "^1.4.0"
+    pretty-format "^21.0.2"
+    request "^2.81.0"
+    tough-cookie "^2.3.2"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -3329,7 +3329,12 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@4.17, lodash@4.17.11, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.2.1:
+lodash@4.17, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+
+lodash@4.17.11:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -3338,11 +3343,6 @@ lodash@^3.7.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
-
-lodash@^4.17.4:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 log-driver@^1.2.7:
   version "1.2.7"
