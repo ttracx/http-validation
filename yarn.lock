@@ -272,22 +272,6 @@
   dependencies:
     find-up "^2.1.0"
 
-"@ttracx/http-validation@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
-  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
-  dependencies:
-    chai "^4.0.2"
-    fs-extra "^4.0.0"
-    glob "^7.1.2"
-    jest-diff "^21.0.0"
-    js-yaml "^3.8.4"
-    lodash "^4.17.4"
-    natural-compare "^1.4.0"
-    pretty-format "^21.0.2"
-    request "^2.81.0"
-    tough-cookie "^2.3.2"
-
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -340,6 +324,22 @@
     "@sinonjs/commons" "^1.0.2"
     array-from "^2.1.1"
     lodash.get "^4.4.2"
+
+"@ttracx/http-validation@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
+  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
+  dependencies:
+    chai "^4.0.2"
+    fs-extra "^4.0.0"
+    glob "^7.1.2"
+    jest-diff "^21.0.0"
+    js-yaml "^3.8.4"
+    lodash "^4.17.4"
+    natural-compare "^1.4.0"
+    pretty-format "^21.0.2"
+    request "^2.81.0"
+    tough-cookie "^2.3.2"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -2259,9 +2259,9 @@ inherits@2, inherits@~2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4, ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 inquirer@^6.1.0:
   version "6.2.2"
