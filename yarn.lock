@@ -272,22 +272,6 @@
   dependencies:
     find-up "^2.1.0"
 
-"@ttracx/http-validation@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
-  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
-  dependencies:
-    chai "^4.0.2"
-    fs-extra "^4.0.0"
-    glob "^7.1.2"
-    jest-diff "^21.0.0"
-    js-yaml "^3.8.4"
-    lodash "^4.17.4"
-    natural-compare "^1.4.0"
-    pretty-format "^21.0.2"
-    request "^2.81.0"
-    tough-cookie "^2.3.2"
-
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -340,6 +324,22 @@
     "@sinonjs/commons" "^1.0.2"
     array-from "^2.1.1"
     lodash.get "^4.4.2"
+
+"@ttracx/http-validation@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@ttracx/http-validation/-/http-validation-0.6.0.tgz#80d4aa12bfd900adc3222bcc6db2b288234c2f5c"
+  integrity sha1-gNSqEr/ZAK3DIivMbbKyiCNML1w=
+  dependencies:
+    chai "^4.0.2"
+    fs-extra "^4.0.0"
+    glob "^7.1.2"
+    jest-diff "^21.0.0"
+    js-yaml "^3.8.4"
+    lodash "^4.17.4"
+    natural-compare "^1.4.0"
+    pretty-format "^21.0.2"
+    request "^2.81.0"
+    tough-cookie "^2.3.2"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -4259,9 +4259,9 @@ qs@^6.5.1:
   integrity sha512-KIJqT9jQJDQx5h5uAVPimw6yVg2SekOKu959OCtktD3FjzbpvaPr8i4zzg07DOMz+igA4W/aNM7OV8H37pFYfA==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^4.1.0:
   version "4.3.4"
